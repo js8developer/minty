@@ -117,7 +117,7 @@ contract Marketplace is ReentrancyGuard {
         uint itemCount = 0;
         uint currentIndex = 0;
 
-        for (uint i = 0; i < itemCount; i++) {
+        for (uint i = 0; i < totalItemCount; i++) {
             if (idToMarketItem[i + 1].owner == msg.sender) {
                 itemCount += 1;
             }
@@ -142,7 +142,7 @@ contract Marketplace is ReentrancyGuard {
         uint itemCount = 0;
         uint currentIndex = 0;
 
-        for (uint i = 0; i < itemCount; i++) {
+        for (uint i = 0; i < totalItemCount; i++) {
             if (idToMarketItem[i + 1].seller == msg.sender) {
                 itemCount += 1;
             }

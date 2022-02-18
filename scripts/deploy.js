@@ -1,6 +1,5 @@
 
 const hre = require("hardhat");
-const { nftmarketaddress } = require("../config");
 
 async function main() {
   const Marketplace = await hre.ethers.getContractFactory('Marketplace');
